@@ -5,5 +5,8 @@
 class Appetiser :
 	public Item
 {
+private:
+	bool shareable;
+	bool twoForOne;
 };
 

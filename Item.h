@@ -12,5 +12,6 @@ private:
 	int calories;
 public:
 	Item(string type, string name, float price, int calories);
+	string toString();
 };
 

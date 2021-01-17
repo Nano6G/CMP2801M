@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CMP2801M", "CMP2801M.vcxproj", "{5C2DBD42-F3FA-4F48-BE93-3835E015796B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{684F09CA-4D76-4577-A0E0-FBBA6E265675}"
+	ProjectSection(SolutionItems) = preProject
+		Takeaway.cpp = Takeaway.cpp
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64

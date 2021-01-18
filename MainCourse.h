@@ -5,6 +5,6 @@ class MainCourse :
 {
 public:
 	MainCourse(string name, float price, int calories);
-	string toString();
+	virtual string toString();
 };
 

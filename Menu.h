@@ -14,6 +14,7 @@ class Menu :
 {
 private:
 	string filePath;
+	vector<Item*> items;
 	vector<Appetiser*> appetisers;
 	vector<MainCourse*> mainCourses;
 	vector<Beverage*> beverages;

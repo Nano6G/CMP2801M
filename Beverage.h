@@ -10,6 +10,6 @@ private:
 public:
 	Beverage(string name, float price, int calories, int volume, float abv);
 	bool isAlcoholic();
-	string toString();
+	virtual string toString();
 };
 

@@ -10,7 +10,6 @@ protected:
 	float price;
 	int calories;
 public:
-	//Item(string name, float price, int calories);
-	string toString();
+	virtual string toString();
 };
 

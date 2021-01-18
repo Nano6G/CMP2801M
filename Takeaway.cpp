@@ -35,9 +35,6 @@ int main()
 	Menu menu = Menu("menu.csv");
 	menu.Load();
 
-	//DELETE ME
-	//cout << menu.toString();
-
 	// Create an order object
 	Order order = Order();
 	

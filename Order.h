@@ -1,6 +1,7 @@
 #pragma once
 #include "ItemList.h"
 #include <iostream>
+#include "Item.h"
 
 using namespace std;
 
@@ -14,6 +15,7 @@ public:
 	int calculateTotal();
 	string printReceipt();
 	string toString();
-	void add();
+	void add(Item* choice);
+	void remove();
 };
 

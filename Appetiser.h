@@ -10,6 +10,6 @@ private:
 	bool twoForOne;
 public:
 	Appetiser(string name, float price, int calories, char shareable, char twoForOne);
-	string toString();
+	virtual string toString();
 };
 

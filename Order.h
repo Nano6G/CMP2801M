@@ -14,5 +14,6 @@ public:
 	int calculateTotal();
 	string printReceipt();
 	string toString();
+	void add();
 };
 

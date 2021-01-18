@@ -17,3 +17,8 @@ string Order::toString()
 {
 	return "test";
 }
+
+void Order::add()
+{
+
+}

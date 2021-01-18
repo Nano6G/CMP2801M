@@ -5,13 +5,12 @@ using namespace std;
 
 class Item
 {
-private:
-	string type;
+protected:
 	string name;
 	float price;
 	int calories;
 public:
-	Item(string type, string name, float price, int calories);
+	//Item(string name, float price, int calories);
 	string toString();
 };
 

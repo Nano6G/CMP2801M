@@ -154,6 +154,7 @@
     <ClCompile Include="MainCourse.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Order.cpp" />
+    <ClCompile Include="Takeaway.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Appetiser.h" />
@@ -163,6 +164,9 @@
     <ClInclude Include="MainCourse.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Order.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="menu.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

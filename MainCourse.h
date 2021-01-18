@@ -3,5 +3,8 @@
 class MainCourse :
 	public Item
 {
+public:
+	MainCourse(string name, float price, int calories);
+	string toString();
 };
 

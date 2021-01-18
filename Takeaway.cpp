@@ -22,6 +22,7 @@ Good luck!
 #include <iostream>
 #include <vector>
 #include <cstring>
+#include <string>
 
 using namespace std;
 
@@ -32,10 +33,14 @@ int main()
 
 	// Create a menu object from a CSV file
 	Menu menu = Menu("menu.csv");
+	menu.Load();
+
+	//DELETE ME
+	cout << menu.toString();
 
 	// Create an order object
 	Order order = Order();
-
+	
 	while (userCommand != "exit")
 	{
 		getline(cin, userCommand);
@@ -59,7 +64,7 @@ int main()
 		else if (command.compare("add") == 0)
 		{
 			Item* choice; // you need to instantiate this using the menu object!
-			order.add(choice); 
+			//order.add(choice); UNCOMMENT ME
 
 			// You may also wish to implement the ability to add multiple items at once!
 			// e.g. add 1 5 9 
@@ -80,7 +85,7 @@ int main()
 		parameters.clear();
 
 	}
-
+	
 	cout << "Press any key to quit...";
 	std::getchar();
 

@@ -8,5 +8,8 @@ class Appetiser :
 private:
 	bool shareable;
 	bool twoForOne;
+public:
+	Appetiser(string name, float price, int calories, char shareable, char twoForOne);
+	string toString();
 };
 

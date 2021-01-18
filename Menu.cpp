@@ -92,6 +92,8 @@ string Menu::toString()
 {
 	string menu;
 	int count = 1;
+
+	menu += "\n------------------------------\tAppetisers\t------------------------------";
 	for (int i = 0; i < appetisers.size(); i++)
 	{
 		menu += "\n(" + to_string(count) + ") ";
@@ -99,6 +101,7 @@ string Menu::toString()
 		count++;
 	}
 
+	menu += "\n\n------------------------------\tMain Dishes\t------------------------------";
 	for (int i = 0; i < mainCourses.size(); i++)
 	{
 		menu += "\n(" + to_string(count) + ") ";
@@ -106,12 +109,15 @@ string Menu::toString()
 		count++;
 	}
 
+	menu += "\n\n------------------------------\tBeverages\t------------------------------";
 	for (int i = 0; i < beverages.size(); i++)
 	{
 		menu += "\n(" + to_string(count) + ") ";
 		menu += beverages[i]->toString();
 		count++;
 	}
+
+	menu += "\n\n";
 
 	return menu;
 }

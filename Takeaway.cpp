@@ -36,7 +36,7 @@ int main()
 	menu.Load();
 
 	//DELETE ME
-	cout << menu.toString();
+	//cout << menu.toString();
 
 	// Create an order object
 	Order order = Order();

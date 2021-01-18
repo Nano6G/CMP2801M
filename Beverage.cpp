@@ -1,5 +1,7 @@
 #include "Beverage.h"
 #include <string>
+#include <iomanip>
+#include <sstream>
 
 using namespace std;
 
@@ -20,18 +22,33 @@ bool Beverage::isAlcoholic()
 
 string Beverage::toString()
 {
+	stringstream roundedPrice;
+	roundedPrice << fixed << setprecision(2) << price;
+
+	stringstream roundedABV;
+	roundedABV << fixed << setprecision(1) << abv;
+
 	string toReturn;
 	if (name.size() > 12)
 	{
-		toReturn = name + ": \t\x9C" + to_string(price) + "   \t" + to_string(calories) + " cal\t(" + to_string(volume) + "ml, " + to_string(abv) + "% abv)";
+		toReturn = name + ": \t\x9C" + roundedPrice.str() + "   \t" + to_string(calories) + " cal\t (" + to_string(volume) + "ml";
 	}
 	else if (name.size() > 8)
 	{
-		toReturn = name + ": \t\t\x9C" + to_string(price) + "   \t" + to_string(calories) + " cal\t(" + to_string(volume) + "ml, " + to_string(abv) + "% abv)";
+		toReturn = name + ": \t\t\x9C" + roundedPrice.str() + "   \t" + to_string(calories) + " cal\t (" + to_string(volume) + "ml";
 	}
 	else
 	{
-		toReturn = name + ": \t\t\t\x9C" + to_string(price) + "   \t" + to_string(calories) + " cal\t(" + to_string(volume) + "ml, " + to_string(abv) + "% abv)";
+		toReturn = name + ": \t\t\t\x9C" + roundedPrice.str() + "   \t" + to_string(calories) + " cal\t (" + to_string(volume) + "ml";
+	}
+
+	if (abv > 0)
+	{
+		toReturn += ", " + roundedABV.str() + "% abv)";
+	}
+	else
+	{
+		toReturn += ")";
 	}
 
 	return toReturn;

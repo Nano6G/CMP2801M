@@ -1,5 +1,6 @@
 #pragma once
 #include "Item.h"
+
 class Beverage :
 	public Item
 {
@@ -11,5 +12,8 @@ public:
 	Beverage(string name, float price, int calories, int volume, float abv);
 	bool isAlcoholic();
 	virtual string toString();
+	virtual char returnType();
+	virtual string returnName();
+	virtual float returnPrice();
 };
 

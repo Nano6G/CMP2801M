@@ -8,8 +8,7 @@ class ItemList
 {
 protected:
 	//Instaces of Item class stored by reference as a vector of pointers
-	vector<Item*> Items;
+	vector<Item*> itemsSelected;
 public:
-	//string toString();
 };
 

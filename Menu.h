@@ -15,9 +15,6 @@ class Menu :
 private:
 	string filePath;
 	vector<Item*> items;
-	vector<Appetiser*> appetisers;
-	vector<MainCourse*> mainCourses;
-	vector<Beverage*> beverages;
 	
 public:
 	Menu(string filePath);
@@ -26,5 +23,6 @@ public:
 	void LoadAppetiser(vector<string> variables);
 	void LoadMain(vector<string> variables);
 	void LoadBeverage(vector<string> variables);
+	vector<Item*> returnItemList();
 };
 

@@ -2,6 +2,7 @@
 #include "ItemList.h"
 #include <iostream>
 #include "Item.h"
+#include "Menu.h"
 
 using namespace std;
 
@@ -10,12 +11,14 @@ class Order :
 	public ItemList
 {
 private:
-	int total;
+	float total;
+	float savings;
 public:
-	int calculateTotal();
-	string printReceipt();
+	void calculateTotal();
+	void printReceipt();
 	string toString();
 	void add(Item* choice);
-	void remove();
+	void remove(int indexToRemove);
+	vector<Item*> returnItemsSelected();
 };
 
